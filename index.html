@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexBell — Intelligent IoT Video Intercom | Nexora</title>
+<meta name="description" content="NexBell digitizes access control in Lima residential buildings. No construction, no cables, no hidden costs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ════════ TOP BAR ════════ -->
+<div id="top-bar">
+  <a href="#hero" class="top-bar-logo"><span class="dot"></span>NexBell</a>
+  <div class="top-bar-right">
+    <div class="lang-sw">
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" data-lang="es" onclick="setLang('es')">ES</button>
+    </div>
+    <a href="#contact" class="btn btn-fill btn-sm rip" data-t="nav_demo"></a>
+  </div>
+</div>
+
+<!-- ════════ HERO ════════ -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge fade" data-d="80">
+      <span class="dot"></span>
+      <span data-t="hero_badge"></span>
+    </div>
+    <h1 class="hero-h1 fade" data-d="180" data-t-html="hero_h1"></h1>
+    <p class="hero-p fade" data-d="300" data-t="hero_p"></p>
+    <div class="hero-btns fade" data-d="420">
+      <a href="#contact" class="btn btn-fill rip">
+        <span class="material-icons-round" style="font-size:18px">play_circle</span>
+        <span data-t="hero_btn1"></span>
+      </a>
+      <a href="#features" class="btn btn-out rip" data-t="hero_btn2"></a>
+    </div>
+    <div class="hero-stats fade" data-d="540">
+      <div><span class="stat-n" data-t="stat1"></span><span class="stat-l" data-t="stat1l"></span></div>
+      <div><span class="stat-n" data-t="stat2"></span><span class="stat-l" data-t="stat2l"></span></div>
+      <div><span class="stat-n" data-t="stat3"></span><span class="stat-l" data-t="stat3l"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ MARQUEE ════════ -->
+<div class="mq-wrap">
+  <div class="mq-track" id="mq-track">
+    <div class="mq-card"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/image_2_nnqxro.png" alt="Building"></div>
+    <div class="mq-card"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/AB6AXU_1_uww48w.png" alt="Phone NexBell"></div>
+    <div class="mq-card"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/image_4_lrltk8.png" alt="Building interior"></div>
+    <div class="mq-card"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/image_3_dw81jx.png" alt="NexBell app"></div>
+    <div class="mq-card"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/image_2_nnqxro.png" alt="Building"></div>
+    <div class="mq-card"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/AB6AXU_1_uww48w.png" alt="Phone NexBell"></div>
+    <div class="mq-card"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/image_4_lrltk8.png" alt="Building interior"></div>
+    <div class="mq-card"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/image_3_dw81jx.png" alt="NexBell app"></div>
+  </div>
+</div>
+
+<!-- ════════ FEATURES ════════ -->
+<section id="features">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-lbl fade" data-d="80" data-t="feat_lbl"></div>
+      <h2 class="sh-h2 fade" data-d="160" data-t-html="feat_h"></h2>
+      <p class="sh-sub fade" data-d="240" data-t="feat_sub"></p>
+    </div>
+    <div class="feat-stage">
+      <div class="feat-grid" id="feat-grid">
+        <article class="md-card"><span class="card-num">01</span><div class="card-ico"><span class="material-icons-round">videocam</span></div><h3 class="card-t" data-t="f1t"></h3><p class="card-d" data-t="f1d"></p></article>
+        <article class="md-card"><span class="card-num">02</span><div class="card-ico"><span class="material-icons-round">notifications_active</span></div><h3 class="card-t" data-t="f2t"></h3><p class="card-d" data-t="f2d"></p></article>
+        <article class="md-card"><span class="card-num">03</span><div class="card-ico"><span class="material-icons-round">verified_user</span></div><h3 class="card-t" data-t="f3t"></h3><p class="card-d" data-t="f3d"></p></article>
+        <article class="md-card"><span class="card-num">04</span><div class="card-ico"><span class="material-icons-round">phone_iphone</span></div><h3 class="card-t" data-t="f4t"></h3><p class="card-d" data-t="f4d"></p></article>
+        <article class="md-card"><span class="card-num">05</span><div class="card-ico"><span class="material-icons-round">history_edu</span></div><h3 class="card-t" data-t="f5t"></h3><p class="card-d" data-t="f5d"></p></article>
+        <article class="md-card"><span class="card-num">06</span><div class="card-ico"><span class="material-icons-round">wifi</span></div><h3 class="card-t" data-t="f6t"></h3><p class="card-d" data-t="f6d"></p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ BENEFITS ════════ -->
+<section id="benefits">
+  <div class="wrap">
+    <div class="ben-layout">
+      <div>
+        <span class="ben-sup fade" data-d="80" data-t="ben_lbl"></span>
+        <h2 class="ben-h2 fade" data-d="160" data-t="ben_h"></h2>
+        <div class="ben-group fade" data-d="240">
+          <span class="ben-role" data-t="ben_role1"></span>
+          <h3 class="ben-role-title" data-t="ben_role1_t"></h3>
+          <ul class="ben-list">
+            <li class="ben-item"><span class="ben-chk"><span class="material-icons-round">check</span></span><span data-t="ben1a"></span></li>
+            <li class="ben-item"><span class="ben-chk"><span class="material-icons-round">check</span></span><span data-t="ben1b"></span></li>
+            <li class="ben-item"><span class="ben-chk"><span class="material-icons-round">check</span></span><span data-t="ben1c"></span></li>
+            <li class="ben-item"><span class="ben-chk"><span class="material-icons-round">check</span></span><span data-t="ben1d"></span></li>
+          </ul>
+        </div>
+        <div class="ben-group fade" data-d="340">
+          <span class="ben-role" data-t="ben_role2"></span>
+          <h3 class="ben-role-title" data-t="ben_role2_t"></h3>
+          <ul class="ben-list">
+            <li class="ben-item"><span class="ben-chk"><span class="material-icons-round">check</span></span><span data-t="ben2a"></span></li>
+            <li class="ben-item"><span class="ben-chk"><span class="material-icons-round">check</span></span><span data-t="ben2b"></span></li>
+            <li class="ben-item"><span class="ben-chk"><span class="material-icons-round">check</span></span><span data-t="ben2c"></span></li>
+            <li class="ben-item"><span class="ben-chk"><span class="material-icons-round">check</span></span><span data-t="ben2d"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ben-visual fade" data-d="200">
+        <img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/image_5_dl7iuz.png" alt="NexBell dashboard">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ HOW IT WORKS ════════ -->
+<section id="how">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-lbl fade" data-d="80" data-t="how_lbl"></div>
+      <h2 class="sh-h2 fade" data-d="160" data-t-html="how_h"></h2>
+    </div>
+    <div class="steps">
+      <div class="step fade" data-d="80"><div class="step-n">1</div><h3 class="step-t" data-t="s1t"></h3><p class="step-d" data-t="s1d"></p></div>
+      <div class="step fade" data-d="200"><div class="step-n">2</div><h3 class="step-t" data-t="s2t"></h3><p class="step-d" data-t="s2d"></p></div>
+      <div class="step fade" data-d="320"><div class="step-n">3</div><h3 class="step-t" data-t="s3t"></h3><p class="step-d" data-t="s3d"></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ TESTIMONIAL — preserved structure ════════ -->
+<section id="testimonial">
+  <div class="tst-wrap fade" data-d="80">
+    <h2 class="tst-heading" data-t-html="tst_h"></h2>
+    <div class="tst-avatars">
+      <button class="tst-av" data-idx="0">
+        <div class="tst-av-img"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550709/admi_rgs41g.jpg" alt="María Fernández"></div>
+        <span class="tst-av-name" data-t="tst_av1"></span>
+      </button>
+      <button class="tst-av" data-idx="1">
+        <div class="tst-av-img"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550710/portero_vbpz8q.jpg" alt="Juan Bellido"></div>
+        <span class="tst-av-name" data-t="tst_av2"></span>
+      </button>
+      <button class="tst-av" data-idx="2">
+        <div class="tst-av-img"><img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1778550710/rsident_lc8lyo.jpg" alt="Lily Ingaruza"></div>
+        <span class="tst-av-name" data-t="tst_av3"></span>
+      </button>
+    </div>
+    <div class="quo-badges">
+      <span class="quo-badge" data-t="qb1"></span>
+      <span class="quo-badge" data-t="qb2"></span>
+      <span class="quo-badge" data-t="qb3"></span>
+    </div>
+  </div>
+</section>
+
+<!-- POPUP OVERLAY -->
+<div class="tst-popup" id="tst-popup" role="dialog" aria-modal="true">
+  <div class="tst-popup-card">
+    <button class="tst-popup-close" id="tst-popup-close" aria-label="Close">
+      <span class="material-icons-round">close</span>
+    </button>
+    <div class="tst-popup-av" id="tst-popup-av"><span class="material-icons-round">person</span></div>
+    <p class="tst-popup-text" id="tst-popup-text"></p>
+    <span class="tst-popup-name" id="tst-popup-name"></span>
+    <span class="tst-popup-role" id="tst-popup-role"></span>
+  </div>
+</div>
+
+<!-- ════════ PRICING ════════ -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-lbl fade" data-d="80" data-t="plan_lbl"></div>
+      <h2 class="sh-h2 fade" data-d="160" data-t-html="plan_h"></h2>
+    </div>
+    <div class="pricing-stage fade" data-d="220">
+      <div class="price-card price-primary rip">
+        <div class="price-badge" data-t="p1_badge"></div>
+        <h3 class="price-title" data-t="p1_title"></h3>
+        <p class="price-desc" data-t="p1_desc"></p>
+        <span class="price-num" data-t="p1_price"></span>
+        <span class="price-per" data-t="p1_per"></span>
+        <ul class="price-feats">
+          <li class="price-feat"><span class="material-icons-round">check_circle</span><span data-t="p1f1"></span></li>
+          <li class="price-feat"><span class="material-icons-round">check_circle</span><span data-t="p1f2"></span></li>
+          <li class="price-feat"><span class="material-icons-round">check_circle</span><span data-t="p1f3"></span></li>
+          <li class="price-feat"><span class="material-icons-round">check_circle</span><span data-t="p1f4"></span></li>
+        </ul>
+        <a href="#contact" class="btn btn-dk btn-w rip" data-t="p1_btn"></a>
+      </div>
+      <div class="price-card price-dark rip">
+        <h3 class="price-title" data-t="p2_title"></h3>
+        <p class="price-desc" data-t="p2_desc"></p>
+        <span class="price-num" style="color:var(--c-p)" data-t="p2_price"></span>
+        <span class="price-per" style="color:rgba(255,255,255,.42)" data-t="p2_per"></span>
+        <ul class="price-feats">
+          <li class="price-feat"><span class="material-icons-round">check_circle</span><span data-t="p2f1"></span></li>
+          <li class="price-feat"><span class="material-icons-round">check_circle</span><span data-t="p2f2"></span></li>
+          <li class="price-feat"><span class="material-icons-round">check_circle</span><span data-t="p2f3"></span></li>
+          <li class="price-feat"><span class="material-icons-round">check_circle</span><span data-t="p2f4"></span></li>
+        </ul>
+        <a href="#contact" class="btn btn-ton btn-w rip" data-t="p2_btn"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FAQ ════════ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sh">
+      <h2 class="sh-h2 fade" data-d="80" data-t-html="faq_title"></h2>
+    </div>
+    <div class="faq-list" id="faq-list"></div>
+  </div>
+</section>
+
+<!-- ════════ CONTACT ════════ -->
+<section id="contact">
+  <div class="wrap-s">
+    <div class="sh-lbl fade" data-d="80" data-t="cont_lbl" style="display:inline-flex"></div>
+    <h2 class="sh-h2 fade" data-d="160" data-t-html="cont_h" style="text-align:center"></h2>
+    <p class="sh-sub fade" data-d="240" data-t="cont_sub"></p>
+    <div class="contact-row fade" data-d="340">
+      <div class="contact-item"><span class="material-icons-round">mail</span><a href="mailto:nexbell.nexora@gmail.com">nexbell.nexora@gmail.com</a></div>
+      <div class="contact-item"><span class="material-icons-round">location_on</span><span>Lima, Perú</span></div>
+    </div>
+    <div class="contact-cta-row fade" data-d="440">
+      <a href="#" class="btn-app btn-web rip">
+        <span class="material-icons-round" style="font-size:20px">open_in_new</span>
+        <span data-t="btn_web"></span>
+      </a>
+      <a href="#" class="btn-app btn-apk rip">
+        <span class="material-icons-round" style="font-size:20px">android</span>
+        <span data-t="btn_apk"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <div>
+        <a href="#hero" class="foot-logo"><span class="dot"></span>NexBell</a>
+        <p class="foot-tag" data-t="foot_by"></p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <a href="#hero" data-t="fl1"></a><a href="#features" data-t="fl2"></a><a href="#benefits" data-t="fl3"></a>
+        </div>
+        <div class="foot-col">
+          <a href="#pricing" data-t="fl4"></a><a href="#contact" data-t="fl5"></a><a href="#" data-t="fl6"></a>
+        </div>
+      </div>
+    </div>
+    <div class="copy"><span data-t="copy"></span><span data-t="copy_loc"></span></div>
+  </div>
+</footer>
+
+<!-- ════════ BOTTOM PILL NAV ════════ -->
+<nav id="pill-nav">
+  <span class="pill-logo">N</span>
+  <div class="pill-links">
+    <a href="#hero"     data-t="nav_home"></a>
+    <a href="#features" data-t="nav_feat"></a>
+    <a href="#benefits" data-t="nav_ben"></a>
+    <a href="#pricing"  data-t="nav_plan"></a>
+    <a href="#contact"  data-t="nav_cont"></a>
+  </div>
+</nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>
