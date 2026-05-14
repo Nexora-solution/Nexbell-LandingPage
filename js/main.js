@@ -76,7 +76,6 @@ const T = {
     hero_p:"NexBell digitaliza el control de accesos en edificios residenciales de Lima. Sin obras, sin cables, sin costos ocultos.",
     hero_btn1:"Solicitar Demo Gratuita",hero_btn2:"Ver funcionalidades",
     stat1:"100%",stat1l:"Digitalización del acceso",
-    stat2:"S/ 0",stat2l:"Costo de instalación",
     stat3:"24/7",stat3l:"Soporte activo",
     feat_lbl:"Funcionalidades",feat_h:"Todo lo que necesitas para un <em>acceso inteligente</em>",
     feat_sub:"NexBell cubre cada punto del ciclo de visita, desde la detección del visitante hasta el registro inmutable del acceso.",
