@@ -1,9 +1,3 @@
-/* ═══════════════════════════════════════════════════
-   NexBell — main.js
-   i18n + reveal + deck-features + magnetic pricing +
-   FAQ accordion + testimonial popup (preserved logic)
-═══════════════════════════════════════════════════ */
-
 /* ── I18N DATA ── */
 const T = {
   en:{

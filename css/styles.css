@@ -1,10 +1,4 @@
-/* ═══════════════════════════════════════════════════
-   NexBell — Intelligent IoT Video Intercom
-   Design system: black + #74D7CF turquoise
-   Type: Space Grotesk 500 (display) · Geist 300/700 (body/btn)
-═══════════════════════════════════════════════════ */
 
-/* Geist fallback: served via Google Fonts (Geist is now hosted there) */
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 /* ── TOKENS ── */
