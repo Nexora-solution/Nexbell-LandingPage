@@ -437,14 +437,19 @@ em{font-style:normal;color:var(--c-p)}
    PRICING — magnetic hover (translate to center)
 ═══════════════════════════════ */
 #pricing{background:#000;padding:110px 0}
+.pricing-auto-note{font-size:14px;opacity:.6;margin-top:8px;text-align:center;font-family:var(--f-body)}
+.pricing-common-note{
+  text-align:center;font-family:var(--f-body);font-size:13px;
+  opacity:.5;margin-top:32px;letter-spacing:.01em;
+}
 .pricing-stage{
-  --price-gap:24px;
-  display:flex;gap:var(--price-gap);max-width:920px;margin:0 auto;
+  --price-gap:20px;
+  display:flex;gap:var(--price-gap);max-width:1160px;margin:0 auto;
   align-items:stretch;
-  perspective:1200px;
+  perspective:1400px;
 }
 .price-card{
-  border-radius:var(--r-xl);padding:44px 40px;
+  border-radius:var(--r-xl);padding:36px 28px;
   position:relative;overflow:hidden;
   flex:1 1 0;min-width:0;
   transition:
@@ -458,24 +463,21 @@ em{font-style:normal;color:var(--c-p)}
 }
 /* Non-hovered card recedes when ANY card is being hovered */
 .pricing-stage:hover .price-card{
-  transform:scale(.92);
+  transform:scale(.93);
   opacity:.45;
   z-index:1;
   filter:blur(1px);
 }
-/* Hovered card slides physically to the row's center and rises above */
+/* Hovered card rises above */
 .pricing-stage .price-card:hover{
   z-index:5;
   opacity:1;
   filter:none;
+  transform:scale(1.04) translateY(-6px);
   box-shadow:var(--glow-lg),0 30px 60px rgba(0,0,0,.55);
 }
-.pricing-stage .price-card:nth-child(1):hover{
-  transform:translateX(calc(50% + (var(--price-gap) / 2))) scale(1.05);
-}
-.pricing-stage .price-card:nth-child(2):hover{
-  transform:translateX(calc(-50% - (var(--price-gap) / 2))) scale(1.05);
-}
+/* Corporate plan accent */
+.price-corp{border-color:rgba(116,215,207,.35)}
 .price-primary{
   background:linear-gradient(155deg,var(--c-p) 0%,#5BC0B8 100%);
   color:#001f1c;
@@ -493,10 +495,11 @@ em{font-style:normal;color:var(--c-p)}
 }
 .price-dark::before,.price-dark::after{display:none}
 .price-badge{display:inline-block;font-family:var(--f-body);font-weight:700;font-size:10px;letter-spacing:.14em;text-transform:uppercase;background:#001f1c;color:var(--c-p);border-radius:var(--r-f);padding:5px 12px;margin-bottom:20px;align-self:flex-start}
-.price-title{font-family:var(--f-display);font-weight:500;font-size:26px;margin-bottom:10px;letter-spacing:-.015em}
-.price-desc{font-family:var(--f-body);font-weight:300;font-size:13.5px;opacity:.78;line-height:1.6;margin-bottom:28px}
-.price-num{font-family:var(--f-display);font-weight:500;font-size:48px;display:block;line-height:1;letter-spacing:-.02em}
-.price-per{font-family:var(--f-body);font-weight:300;font-size:13px;opacity:.62;display:block;margin-top:6px;margin-bottom:30px}
+.price-title{font-family:var(--f-display);font-weight:500;font-size:22px;margin-bottom:10px;letter-spacing:-.015em}
+.price-desc{font-family:var(--f-body);font-weight:300;font-size:13px;opacity:.78;line-height:1.6;margin-bottom:24px}
+.price-num{font-family:var(--f-display);font-weight:500;font-size:42px;display:block;line-height:1;letter-spacing:-.02em}
+.price-num-corp{font-size:18px;line-height:1.3;margin-bottom:20px;opacity:.9}
+.price-per{font-family:var(--f-body);font-weight:300;font-size:13px;opacity:.62;display:block;margin-top:6px;margin-bottom:26px}
 .price-feats{display:flex;flex-direction:column;gap:12px;margin-bottom:32px;flex:1}
 .price-feat{font-family:var(--f-body);font-weight:300;display:flex;align-items:center;gap:10px;font-size:13.5px;line-height:1.45}
 .price-feat .material-icons-round{font-size:18px}
@@ -618,11 +621,9 @@ footer{background:#000;border-top:1px solid var(--c-line);padding-bottom:110px}
   .feat-grid.deck .md-card{position:relative;left:auto;top:auto;width:auto;transform:none !important;box-shadow:none}
   .steps{grid-template-columns:1fr;gap:40px}
   .steps::before{display:none}
-  .pricing-stage{flex-direction:column}
+  .pricing-stage{flex-direction:column;max-width:480px}
   .pricing-stage:hover .price-card,
-  .pricing-stage .price-card:hover,
-  .pricing-stage .price-card:nth-child(1):hover,
-  .pricing-stage .price-card:nth-child(2):hover{transform:none;opacity:1;filter:none;box-shadow:var(--glow),var(--el1)}
+  .pricing-stage .price-card:hover{transform:none;opacity:1;filter:none;box-shadow:var(--glow),var(--el1)}
   .hero-stats{gap:32px}
   .pill-links{gap:16px}
   .pill-links a{font-size:11px}
